@@ -1,0 +1,46 @@
+1.
+  A) Table-driven code is the principle of creating look-up tables for your data instead of using conditionals such as switches or if-else blocks in order to make decisions.
+  B) When you have a lot of cases to check it can be much simpler to just perform a find on a set of data in a table instead of writing many conditional statements. This can also reduce the likeliness of you writing a bug since there is less code being written overall.
+  C)
+int keypresses(char c){
+  int answer=-1;
+  for(int i = 0; i < 9; i++)
+    answer = keypresses[i].find(c)
+    if(answer>-1)
+      break
+  return answer + 1;
+}
+
+2.
+A) Check if the structure is following last in first out order requirements. Since queue and priority queue would be using fifo instead
+B)
+bool validStack(const vector<Command> &cmd);
+bool validQueue(const vector<Command> &cmd);
+bool validPriorityQueue(const vector<Command> &cmd);
+
+void output(const vector<Command> &cmd){
+  if(validStack(cmd))
+    cout << "stack" << endl;
+  else if(validQueue(cmd))
+    cout << "queue" << endl
+  else if(validPriority(cmd)))
+    cout << "priority queue" << endl;
+  else if(
+  (validStack(cmd) && validQueue(cmd) || validPriority(cmd))||
+  (validQueue(cmd) && validStack(cmd) || validPriority(cmd))||
+  (validPriority(cmd) && validQueue(cmd) || validStack(cmd)))
+    cout << "not sure" << endl;
+  else
+    cout << "impossible" << endl;
+}
+
+3.
+A)52 options per character (uppercase and lowercase), with 20 characters. so 52^20
+B) Any time I save a name I would place into a map with it's name being assigned a unique integer value to reference it as a key.
+C) I would use a union map since we are trying to keep track of all of the equivalence relations between a group of objects.
+D) After performing a merge operation I would update a secondary data structure that keeps track of the size of a group linked to its index. Then perform a find using one of the keys recently merged. This should give me an index to the group containing the item. I can then get the size of this item by performing a search on my size data structure since it gets updated along with every merge.
+
+4.
+A) A cumulative sum of non-negative integers
+B) Because we need to keep track of the ranks of the elements in a sorted list as they are inserted or deleted. It is much easier to do this in a data structure designed to do so than in a simple array.
+C) To initialize the fenwick tree we would simply add each number and have it added to the cumulative sum. We would initialize a secondary array with all of the input data.
