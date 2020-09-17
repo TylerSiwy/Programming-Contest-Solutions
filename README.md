@@ -1,5 +1,5 @@
 # Programming-Contest-Solutions
-This repo houses the culmination of my work throughout the semester of CPSC 3200 - Practical Problem Solving with Dr Howard Cheng at the University Of Lethbridge, 2020. Links to each question, and the online judge can be found within every solution, should you wish to try them yourself, or reference them for your own attempts. Some are thoroughly documented, some are not.
+This repo houses the culmination of my work throughout the semester of CPSC 3200 - Practical Problem Solving with Dr Howard Cheng at the University Of Lethbridge, 2020. Links to each question, and the online judge can be found within below, should you wish to try them yourself, or reference them during your own attempt. Some are thoroughly documented, some are not.
 
 [Online Judge used to assess each question attempted](https://onlinejudge.org/index.php?option=com_frontpage)<br>
 
